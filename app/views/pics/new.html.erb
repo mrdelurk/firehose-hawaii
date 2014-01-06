@@ -3,8 +3,10 @@
 <h2>
 	<%= simple_form_for @pic do |f| %>
 		<br /><%= f.input :lesson, label: 'Which lesson is this?' %> 
+
 		<%= f.input :emotion, label: 'How did you feel?' %> 
-		<%= f.input :learned, label: 'What did you learn?' %> <br />
+		<%= f.input :learned, label: 'What did you learn?' %> 
+		<%= f.input :picture, label: 'Upload a picture' %><br />
 
 		<%= f.button :submit, 'Save The Whole Thing', :class => 'btn btn-large btn-warning' %>
 
